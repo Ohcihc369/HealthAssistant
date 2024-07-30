@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- mobile_navigation.xml -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_welcome">
+
+    <fragment
+        android:id="@+id/nav_welcome"
+        android:name="com.example.healthassistant.ui.welcome.WelcomeFragment"
+        android:label="Welcome"
+        tools:layout="@layout/fragment_welcome" />
+
+    <fragment
+        android:id="@+id/nav_bmi_calculator"
+        android:name="com.example.healthassistant.ui.bmicalculator.BMICalculatorFragment"
+        android:label="@string/menu_calculate_bmi"
+        tools:layout="@layout/fragment_bmicalculator" />
+
+    <fragment
+        android:id="@+id/nav_sos"
+        android:name="com.example.healthassistant.ui.sos.SOSFragment"
+        android:label="@string/menu_sos"
+        tools:layout="@layout/fragment_sos" />
+
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="com.example.healthassistant.ui.map.MapFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_map" />
+</navigation>
